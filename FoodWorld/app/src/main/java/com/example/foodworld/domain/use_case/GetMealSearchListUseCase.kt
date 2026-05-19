@@ -10,7 +10,7 @@ import okio.IOException
 import retrofit2.HttpException
 import javax.inject.Inject
 
-class GetMealSearchList @Inject constructor(private val repository: MealSearchRepository) {
+class GetMealSearchListUseCase @Inject constructor(private val repository: MealSearchRepository) {
 
     operator fun invoke(s: String): Flow<Resource<List<Meal>>> = flow {
         try {

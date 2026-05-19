@@ -82,6 +82,15 @@ dependencies {
     // --- Moshi ---
     ksp("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
 
+    // Lifecycle and State collection
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+
+// Hilt integration with Compose
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+
+// Coil for asynchronous image loading (Compose alternative to Glide)
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
     // --- Testing ---
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
