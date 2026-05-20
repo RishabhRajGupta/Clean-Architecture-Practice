@@ -62,7 +62,6 @@ fun MealSearchScreen(
                     )
                 }
                 !state.data.isNullOrEmpty() -> {
-                    // Replaces the GridLayoutManager RecyclerView
                     LazyVerticalGrid(
                         columns = GridCells.Fixed(2),
                         contentPadding = PaddingValues(16.dp),
